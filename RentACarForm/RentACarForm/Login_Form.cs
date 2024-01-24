@@ -31,18 +31,26 @@ namespace RentACarForm
             if (appUserForm != null)
             {
                 LoginUser.SetAppUser(appUserForm);
-                MessageBox.Show("Başarılı");
+                MessageBox.Show("Success!");
                 Main_Form mainForm = new Main_Form(); ///instance
                 mainForm.Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Şifre Yanlış");
+                MessageBox.Show("Password is wrong!");
             }
 
         }
 
+        private void tbx_userName_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
